@@ -41,11 +41,7 @@ def decodeGhost(strGhost):
     ghostWords = strGhost.split()
     for i in range(len(ghostWords)):
         strBinary = ""
-
-        if len(ghostWords[i]) > 8:
-            print(f"This ghost must have a speech impediment :(\n(Ghost word is too long: {len(ghostWords[i])} characters, max is 8)")
-            exit()
-        
+       
         for j in range(len(ghostWords[i])):
             if ghostWords[i][j] == "O":
                 strBinary += "1"
