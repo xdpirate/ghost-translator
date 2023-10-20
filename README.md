@@ -20,3 +20,7 @@ OoOooo O Ooooo Ooooo OOooO Ooooooo OoOooo O OOoo OOoo OOOO OoOOO OoO OoO OOOo Oo
 $ ./ghost-translator --decode "OoOooo O Ooooo Ooooo OOooO Ooooooo OoOooo O OOoo OOoo OOOO OoOOO OoO OoO OOOo OoooooO"
 Happy Halloween!
 ```
+
+# Acknowledgements
+
+Inspired by [Cow translator](https://github.com/SkwalExe/cow-translator) by SkwalExe 🐮
