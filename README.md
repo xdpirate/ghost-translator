@@ -14,11 +14,11 @@ Translate human-speak to ghost-speak and vice versa.
 Examples:
 
 ```
-$ ./ghost-translator --encode "Happy Halloween!"
-OoOooo O Ooooo Ooooo OOooO Ooooooo OoOooo O OOoo OOoo OOOO OoOOO OoO OoO OOOo OoooooO 
+$ ./ghost-translator -e "Boo! 👻"
+OoooOo OOOO OOOO OoooooO Ooooooo OOOOOoOoooooOOoOO
 
-$ ./ghost-translator --decode "OoOooo O Ooooo Ooooo OOooO Ooooooo OoOooo O OOoo OOoo OOOO OoOOO OoO OoO OOOo OoooooO"
-Happy Halloween!
+$ ./ghost-translator -d "OoOooo O Ooooo Ooooo OOooO Ooooooo OoOooo O OOoo OOoo OOOO OoOOO OoO OoO OOOo OoooooO Ooooooo OOOOOooOOOOOoooOO"
+Happy Halloween! 🎃
 ```
 
 # Acknowledgements
