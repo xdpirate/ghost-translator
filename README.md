@@ -1,4 +1,4 @@
-# ghost-translator
+# ghost-translator 👻
 
 Translate human-speak to ghost-speak and vice versa.
 
