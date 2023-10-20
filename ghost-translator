@@ -2,7 +2,7 @@
 from sys import argv
 
 def main():
-    if len(argv) > 1:
+    if len(argv) > 2:
         if argv[1] == "-e" or argv[1] == "--encode":
             encodeGhost(argv[2])
         elif argv[1] == "-d" or argv[1] == "--decode":
@@ -15,7 +15,7 @@ def main():
 def printUsage():
     print("Usage:")
     print("\tghost-translator -d (or --decode) \"OoOooo OoO OOooO OoooooO\"'  : Decode ghost-speak")
-    print("\tghost-translator -e (or --encode) \"Hello!\"                    : Encode ghost-speak")
+    print("\tghost-translator -e (or --encode) \"Hello!\"                     : Encode ghost-speak")
     print("\nExample:\n\tghost-translator -e \"Waddup!\"")
 
 def encodeGhost(humanSpeak):
