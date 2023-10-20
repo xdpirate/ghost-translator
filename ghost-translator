@@ -14,8 +14,8 @@ def main():
 
 def printUsage():
     print("Usage:")
-    print("\tghost-translator -d (or --decode) \"OoOooo OoO OOooO OoooooO\"'  : Decode ghost language")
-    print("\tghost-translator -e (or --encode) \"Hello!\"                    : Encode ghost language")
+    print("\tghost-translator -d (or --decode) \"OoOooo OoO OOooO OoooooO\"'  : Decode ghost-speak")
+    print("\tghost-translator -e (or --encode) \"Hello!\"                    : Encode ghost-speak")
     print("\nExample:\n\tghost-translator -e \"Waddup!\"")
 
 def encodeGhost(humanSpeak):
@@ -43,7 +43,7 @@ def decodeGhost(strGhost):
         strBinary = ""
 
         if len(ghostWords[i]) > 8:
-            print(f"This ghost must have a speech impediment :(\n(Ghost is word too long: {len(ghostWords[i])} characters, max is 8)")
+            print(f"This ghost must have a speech impediment :(\n(Ghost word is too long: {len(ghostWords[i])} characters, max is 8)")
             exit()
         
         for j in range(len(ghostWords[i])):
