@@ -8,7 +8,7 @@ Translate human-speak to ghost-speak and vice versa.
 * Mark `ghost-translator` as executable with `chmod +x ghost-translator` to run it directly, or run it with `python3`
 
 # Usage
-* `ghost-translator -d (or --decode) "OoOooo OoO OOooO OoooooO"'` - Decode ghost-speak
+* `ghost-translator -d (or --decode) "OoOooo OoO OOooO OoooooO"` - Decode ghost-speak
 * `ghost-translator -e (or --encode) "Hello!"` - Encode ghost-speak
 
 Examples:
