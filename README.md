@@ -10,6 +10,8 @@ Translate human-speak to ghost-speak and vice versa.
 * Mark `ghost-translator.py` as executable with `chmod +x ghost-translator.py` to run it directly, or run it with `python3 ghost-translator.py (parameters)`
 
 ## JavaScript
+The JS implementation is available to [use online through GitHub Pages](https://xdpirate.github.io/ghost-translator/ghost-translator.html). If you want to download and use on your computer:
+
 * Clone or download this repository
 * Open `ghost-translator.html` in your web browser
 * Use the provided textarea and buttons to encode/decode your spooky messages
