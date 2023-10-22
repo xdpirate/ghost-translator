@@ -7,7 +7,7 @@ Translate human-speak to ghost-speak and vice versa.
 ## Python
 * Install [Python](https://www.python.org/).
 * Clone this repository, or just download `ghost-translator.py`.
-* Mark `ghost-translator.py` as executable with `chmod +x ghost-translator` to run it directly, or run it with `python3`
+* Mark `ghost-translator.py` as executable with `chmod +x ghost-translator.py` to run it directly, or run it with `python3 ghost-translator.py (parameters)`
 
 ## JavaScript
 * Clone or download this repository
