@@ -21,10 +21,10 @@ Translate human-speak to ghost-speak and vice versa.
 Examples:
 
 ```
-$ ./ghost-translator -e "Boo! 👻"
+$ ./ghost-translator.py -e "Boo! 👻"
 OoooOo OOOO OOOO OoooooO Ooooooo OOOOOoOoooooOOoOO
 
-$ ./ghost-translator -d "OoOooo O Ooooo Ooooo OOooO Ooooooo OoOooo O OOoo OOoo OOOO OoOOO OoO OoO OOOo OoooooO Ooooooo OOOOOooOOOOOoooOO"
+$ ./ghost-translator.py -d "OoOooo O Ooooo Ooooo OOooO Ooooooo OoOooo O OOoo OOoo OOOO OoOOO OoO OoO OOOo OoooooO Ooooooo OOOOOooOOOOOoooOO"
 Happy Halloween! 🎃
 ```
 
