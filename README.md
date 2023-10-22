@@ -3,13 +3,20 @@
 Translate human-speak to ghost-speak and vice versa.
 
 # Installation
+
+## Python
 * Install [Python](https://www.python.org/).
 * Clone this repository, or just download `ghost-translator`.
-* Mark `ghost-translator` as executable with `chmod +x ghost-translator` to run it directly, or run it with `python3`
+* Mark `ghost-translator.py` as executable with `chmod +x ghost-translator` to run it directly, or run it with `python3`
 
-# Usage
-* `ghost-translator -d (or --decode) "OoOooo OoO OOooO OoooooO"` - Decode ghost-speak
-* `ghost-translator -e (or --encode) "Hello!"` - Encode ghost-speak
+## JavaScript
+* Clone or download this repository
+* Open `ghost-translator.html` in your web browser
+* Use the provided textarea and buttons to encode/decode your spooky messages
+
+# Usage (Python)
+* `ghost-translator.py -d (or --decode) "OoOooo OoO OOooO OoooooO"` - Decode ghost-speak
+* `ghost-translator.py -e (or --encode) "Hello!"` - Encode ghost-speak
 
 Examples:
 
@@ -27,7 +34,11 @@ It's quite simple, really. To encode human-speak into ghost-speak, first each ch
 
 This process is repeated for every character entered, with a space appended between each ghost word to represent the boundary between each character.
 
-To decode ghost-speak back to human-speak, the process is simply done in reverse.
+To decode ghost-speak back to human-speak, the process is simply done in reverse. The implementation is the same across language versions.
+
+# Why do the two implementations give different results?
+
+If emoji aren't involved, the two implementations will yield identical results. If emoji are involved, JS and Python will give different results when encoding or decoding. It looks like this is because Python considers the double-byte emoji to be a single character, while JavaScript considers them to be two characters.
 
 # Acknowledgements
 

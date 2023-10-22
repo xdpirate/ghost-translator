@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ghost-translator</title>
+    <script src="./ghost-translator.js"></script>
+    <style>
+        textarea {
+            width: 100%;
+            height: 200px;
+        }
+
+        #mainDiv {
+            width: 75%;
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        #outputArea {
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <textarea id="inputArea"></textarea><br /><br />
+        <input type="button" value="To ghost" onclick="document.getElementById('outputArea').innerText = encodeGhost(document.getElementById('inputArea').value)" /> <input type="button" value="To human" onclick="document.getElementById('outputArea').innerText = decodeGhost(document.getElementById('inputArea').value)" /><br /><br />
+        <div id="outputArea"></textarea>
+    </div>
+</body>
+
+</html>
