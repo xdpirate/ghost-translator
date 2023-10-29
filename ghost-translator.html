@@ -7,30 +7,74 @@
     <title>ghost-translator</title>
     <script src="./ghost-translator.js"></script>
     <style>
-        textarea {
-            width: 100%;
-            height: 200px;
+        html,body,input,textarea {
+            background-color: #060606;
+            color: #fff;
+            font-size: x-large;
         }
 
+        #buttons {
+            width: 100%;
+        }
+
+        input[type="button"] {
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        input.translateBtn {
+            width: 50%;
+        }
+
+        a,a:visited {
+            color: #888;
+            text-decoration: none;
+        }
+        
         #mainDiv {
             width: 75%;
             margin: auto;
             margin-top: 100px;
         }
-
-        #outputArea {
+        
+        #inputArea, #outputArea {
             padding: 20px;
-            border: 1px solid black;
-            border-radius: 10px;
+            border: 1px solid white;
+            border-radius: 20px;
+        }
+
+        #inputArea {
+            height: 200px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #copyButton {
+            display: none;
+        }
+
+        #footer {
+            float: right;
         }
     </style>
 </head>
 
 <body>
     <div id="mainDiv">
-        <textarea id="inputArea"></textarea><br /><br />
-        <input type="button" value="To ghost" onclick="document.getElementById('outputArea').innerText = encodeGhost(document.getElementById('inputArea').value)" /> <input type="button" value="To human" onclick="document.getElementById('outputArea').innerText = decodeGhost(document.getElementById('inputArea').value)" /><br /><br />
-        <div id="outputArea"></textarea>
+        <h1>ghost-translator</h1>
+        <textarea id="inputArea" placeholder="Enter some text..."></textarea><br /><br />
+
+        <div id="buttons">
+            <input type="button" class="translateBtn" value="To ghost 👻" onclick="document.getElementById('outputArea').innerText = encodeGhost(document.getElementById('inputArea').value);" /><input type="button" class="translateBtn" value="To human 🧑🏼" onclick="document.getElementById('outputArea').innerText = decodeGhost(document.getElementById('inputArea').value)" />
+        </div><br />
+        
+        <div id="outputArea">Results will appear here!</div><br />
+        <input type="button" id="copyButton" name="copyButton" value="Copy results" onclick="copyText();" />
+        
+        <div id="footer">
+            <a href="https://github.com/xdpirate/ghost-translator">Source code</a>
+        </div>
     </div>
 </body>
 
