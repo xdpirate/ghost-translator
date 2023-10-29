@@ -75,6 +75,6 @@ async function copyText() {
             document.getElementById("copyButton").value = "Copy results";
         }, 3000);
     } catch (err) {
-        alert("Failed to copy to clipboard: ", err);
+        alert("Failed to copy to clipboard: " + err);
     }
 }
